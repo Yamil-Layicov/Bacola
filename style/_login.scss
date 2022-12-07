@@ -1,0 +1,200 @@
+
+nav{
+    padding: 40px 0;
+    ul{
+        display: flex;
+        padding: 0 0 !important;
+        margin: 0 0 !important;
+        li{
+            list-style: none;
+            margin-right: 20px;
+            a{
+                font-family: 'Dosis', sans-serif;
+                color: #9b9bb4;
+                font-size: 12px;
+                text-decoration: none;
+                font-weight: bold;
+                position: relative;
+            }
+            #main{
+                color: #202435;
+                &::after{
+                    position: absolute;
+                    content: ">";
+                    font-size: 15px;
+                    color: #9b9bb4;
+                    padding: 0 0 0 7px;
+                }
+
+            }
+        }
+    }
+}
+
+#profil{
+    padding: 20px 0;
+
+    h2{
+        color: #202435;
+        font-size: 16px;
+        margin: 0 0 12px;
+        padding: 0 0 12px;
+        border-bottom: 1px solid #20243526;
+    }
+
+    .login{
+
+
+        .logininpit{
+
+            label{
+                font-size: 13px;
+                color: #202435;
+                width: 100%;
+                margin: 0 0 8px;
+            }
+    
+            input{
+                width: 100%;
+                background-color: #f3f4f7;
+                color: #202435;
+                padding: 0 15px;
+                height: 2.5rem;
+                border: 1px solid transparent;
+                outline: none;
+                height: 2.875rem;
+                border-radius: 8px;
+            }
+
+        }
+
+        .chekboxdiv{
+            display: flex;
+            align-items: center;
+            #checkbox{
+                padding: 10px;
+                margin: 20px 0 20px 0;
+            }
+
+            label{
+                font-size: 13px;
+                color: #202435;
+                margin-left: 10px;
+                outline: none;
+            }
+
+        }
+
+        #buttonlogin{
+            text-decoration: none;
+            background-color: #233a95;
+            border-radius: 4px;
+            padding: 10px 1.25rem;
+            border: 1px solid;
+            color: #fff;
+            font-size: .875rem;
+        }
+
+        #forgetpassword{
+            display: block;
+            font-size: 14px;
+            color: #2bbef9;
+            text-decoration: none;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                visibility: visible;
+                content: '';
+                top: 19px;
+                width: 0;
+                height: 1px;
+                background-color: #2bbef9;
+                transition: 0.5s;
+
+            }
+
+            &:hover{
+                &::before{
+                    width: 19.59%;
+                }
+
+            }
+
+        }
+
+    }
+
+    .register{
+
+        .registerinpit{
+
+            label{
+                font-size: 13px;
+                color: #202435;
+                width: 100%;
+                margin: 0 0 8px;
+            }
+    
+            input{
+                width: 100%;
+                background-color: #f3f4f7;
+                color: #202435;
+                padding: 0 15px;
+                height: 2.5rem;
+                border: 1px solid transparent;
+                outline: none;
+                height: 2.875rem;
+                border-radius: 8px;
+            }
+
+        }
+
+        p{
+            font-size: 13px;
+            color: #202435;
+            margin: 20px 0;
+            a{
+                color: #233a95;
+                text-decoration: none;
+                position: relative;
+                font-weight: bold;
+                &::before{
+                    position: absolute;
+                    visibility: hidden;
+                    content: '';
+                    top: 16px;
+                    width: 0%;
+                    height: 2px;
+                    background-color: #233a95;
+                    transition: 0.5s;
+                }
+
+                &:hover{
+                    color: #f0174a;
+                    &::before{
+                        visibility: visible;
+                        width: 100%;
+                        background-color: #f0174a;
+                    }
+
+                }
+            }
+        }
+
+        #buttonregister{
+            text-decoration: none;
+            background-color: #233a95;
+            border-radius: 4px;
+            padding: 10px 1.25rem;
+            border: 1px solid;
+            color: #fff;
+            font-size: .875rem;
+        }
+
+
+
+    }
+
+
+}

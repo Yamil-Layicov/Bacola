@@ -1,0 +1,1211 @@
+
+@import "_responsive.scss";
+
+@import "_hefo.scss";
+
+@import "_contact.scss";
+
+@import "_login.scss";
+
+@import "_shopwide.scss";
+
+@import "_productdetails.scss";
+
+@import "_basket.scss";
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #233a95;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background-color: #2BBEF9;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #FFFFFF;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+}
+
+#slayder{
+    .slayder-index{
+        div{
+            img{
+                width: 100%;
+            }
+            position: relative;
+            .slaydercontent{
+                width: 30%;
+                position: absolute;
+                top: 100px;
+                left: 200px;
+               
+               .sctop{
+                    font-family: 'Dosis', sans-serif;
+                    .scttext{
+                        font-size: 14px;
+                    }
+
+                    .sctoffer{
+                        margin-left: 10px;
+                        color: #038e42;
+                        font-weight: 600;
+                        padding: 5px 10px;
+                        border-radius: 20px;
+                        background:linear-gradient(90deg, rgba(0, 184, 83, 0.2) 0%, rgba(32, 55, 88, 0) 100%);
+                    }
+                
+                }
+               
+                .sccenter{
+                    h3{
+                        font-size: 3rem;
+                        font-weight: bold;
+                    }
+                    span{
+                        font-size: 1rem;
+                    }
+                    margin: 10px 0;
+                }
+
+                .scfotter{
+                    margin-bottom: 20px;
+                    .scftext{
+                        font-size: 17px;
+                        font-weight: 400;
+                    }
+                    .scfprice{
+                        font-family: 'Dosis', sans-serif;
+                        font-size: 35px;
+                        color: #d51243;
+                        font-weight: bold;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 10px 30px;
+                    border-radius: 20px;
+                    background-color: #2BBEF9;
+                }
+
+            }
+        }
+
+        .slick-prev{
+            left: 10px;
+            z-index: 1;
+            &::before{
+                font-size: 50px;
+                color: #ffffff;
+            }
+        }
+
+        .slick-next{
+            z-index: 1;    
+            right: 40px;
+            &::before{
+                font-size: 50px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+#elementor{
+    margin: 25px 0 25px;
+    .mainelements{
+        display: flex;
+
+        .elementsleft{
+            width: 20%;
+            
+            .elementsmain{
+                text-align: center;
+                border: 1px solid #e4e5ee;
+                img{
+                    width: 97.6%;
+                }
+                .emla{
+                    display: block;
+                    text-decoration: none;
+                    color: #202435;
+                }
+                .emlp{
+                    span{
+                        font-size: .75rem;
+                        font-weight: 300;
+                    }
+                    
+                }
+
+            }
+        }
+
+
+        .elementsright{
+            width: 80%;
+                
+
+                .allboxelements{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .elementcards{
+                        border: 1px solid #e4e5ee;
+                        padding: 20px;
+                        display: flex;
+                        width: 25%;
+                        .elementimg{
+                            width: 50%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    
+                        .elementcontent{
+                            width: 50%;
+                            a{
+                                text-decoration: none;
+                                color: #202435;
+                                font-weight: bold;
+                            }
+                            .elementsitems{
+                                padding: 10px 0;
+                                span{
+                                    font-size: .75rem;
+                                    font-weight: 300;
+                                    
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+        }
+
+    }
+
+}
+
+#saleproducts{
+
+    margin: 10px 0;
+
+    .elementpopulat{
+        border: 2px solid #ed174a;
+        border-radius: 8px;
+
+        .ephead{
+            padding: 30px 30px 0;
+            span{
+                font-size: 1.25rem;
+                color: #233a95;
+                span{
+                    font-weight: bold;
+                }
+            }
+            .dealscounter{
+                margin-top: 10px;
+
+                .countertime{
+                display: flex;
+                align-items: center;
+                    span{
+                        font-size: 16px;
+                        margin: 0 4px;
+                        font-weight: bold;
+                        color: #ed174a;
+                    }
+                    .box{
+                        font-family: 'Dosis', sans-serif;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.25rem;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 7px;
+                        color: #FFFFFF;
+                        background-color: #ed174a;
+                    }
+                    
+                }
+
+                .dcbottom{
+                    span{
+                        font-size: .75rem;
+                        margin-top: .9375rem;
+                        color: #c2c2d3;
+
+                    }
+                }
+            }
+        }
+
+        .epmain{
+            position: relative;
+            padding: 20px;
+            .epmimg{
+                img{
+                    width: 100%;
+                }
+            }
+            .dealsdiscount{
+                font-family: 'Dosis', sans-serif;
+                position:absolute;
+                text-align: center;
+                padding: 20px 21px;
+                top: 4.375rem;
+                left: 1.875rem;
+                background-color: #ed174a;
+                border-radius: 100%;
+                font-size: 1.5rem;
+                color: #fff;
+            }
+        }
+
+        .epfotter{
+            padding: 0 30px 30px;
+
+            .elementprices{
+                font-family: 'Dosis', sans-serif;
+                .prices{
+                    font-size: 85%;
+                    color: #c2c2d3;
+                    font-weight: bold;
+                    font-size: 20.4px;
+                    margin-right: 10px;
+                    text-decoration:line-through;
+                }
+                .saleprices{
+                    color: #d51243;
+                    font-weight: bold;
+                    font-size: 24px;
+
+                }
+            }
+
+            a{
+                font-size: 18px;
+                text-decoration: none;
+                color: #202435;
+                font-weight: 600;
+            }
+
+            .meta{
+                span{
+                    font-size: 11px;
+                    font-weight: 500;
+                }
+                .metaweight{
+                    color: #9b9bb4;
+                }
+                .metastock{
+                    color: #00b853;
+                }
+            }
+
+            .rating{
+                
+                i{    
+                    font-size: 10px;
+                    color:#ffcd00;
+                    margin: 0 1px;
+                }
+                span{
+                    font-size: 11px;
+                    margin: 0 4px;
+                }
+            }
+
+            .count{
+                
+                .available{
+                    font-family: 'Dosis', sans-serif;
+                    text-align: end;
+                    margin: 0 0 10px;
+                    span{
+                        font-weight: bold;
+                        font-size: 11px;
+                        color: #c2c2d3;
+                        .acount{
+                            color: #233a95;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .progress{
+                    width: 100%;
+                    border-radius: 25px;
+                    .progressbar{
+                        padding: 5px 0;
+                        border-radius: 25px;
+                        width: 83%;
+                        background: linear-gradient(90deg, #d51243 0%, #ff6048 50%, #ffcd00 100%);
+                    }
+    
+                }
+            }
+
+        }
+
+    }
+
+    .elementsboxs{
+
+        padding: 15px;
+        
+        .left{
+            .main{
+                border-radius: 8px 0 0 0;
+            }
+        }
+
+        .right{
+            .main{
+                border-radius: 0 8px 0 0;
+            }
+        }
+
+        .bleft{
+            .main{
+                border-radius:  0 0 0 8px;
+            }
+        }
+
+        .bright{
+            .main{
+                border-radius: 0 0 8px 0;
+            }
+        }
+
+        
+        .carts{
+            width: 33%;
+            padding: 0 0 !important;
+            position: relative;
+            .main{
+                overflow: hidden;
+                position: relative;
+                border: 1px solid #edeef5;
+                .contentimg{
+                    padding: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .like{
+                    background-color: #fff;
+                    padding: 10px 10px;
+                    border-radius: 100%;
+                    position: absolute;
+                    color: #233a95;
+                    transition: 0.6s;
+                    top: 60px;
+                    right: -50px;
+                    opacity: 0;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #d51243;
+                        background-color: #233a95;
+                    }
+                }
+    
+                .resize{
+                    position: absolute;
+                    background-color: #fff;
+                    color: #233a95;
+                    padding: 10px 11px;
+                    border-radius: 100%;
+                    transition: 0.3s;
+                    top: 10px;
+                    right: -50px;
+                    opacity: 1;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    &:hover{
+                        transform: scale(1.2);
+                        background-color: #233a95;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .contenttext{
+                    text-align: start;
+                    padding: 0 20px 30px;
+    
+                    a{
+                        text-decoration: none;
+                        color: #202435;
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: block;
+                    }
+    
+                    .cartsstock{
+                        font-size: 11px;
+                        color: #00b853;
+                        font-family: 'Dosis', sans-serif;
+                        font-weight: bold;
+                    }
+    
+                    .cartselementprices{
+                        font-family: 'Dosis', sans-serif;
+                        .prices{
+                            font-size: 85%;
+                            color: #c2c2d3;
+                            font-weight: bold;
+                            font-size: 15.3px;
+                            margin-right: 10px;
+                            text-decoration:line-through;
+                        }
+                        .saleprices{
+                            color: #d51243;
+                            font-weight: bold;
+                            font-size: 18px;
+        
+                        }
+                    }
+    
+    
+                    .cartsrating{
+                    
+                        i{    
+                            font-size: 10px;
+                            color:#ffcd00;
+                            margin: 0 1px;
+                        }
+                        span{
+                            font-size: 11px;
+                            margin: 0 4px;
+                        }
+                    } 
+                    
+
+
+                } 
+
+                
+                &:hover{
+
+                    .resize{
+                        right: 10px;
+                        opacity: 1;
+                    }
+
+                    .like{
+                        right: 10px;
+                        opacity: 1;
+                    }
+
+                }
+
+            }
+
+            .hover{
+                z-index: 1111;
+                text-align: center;
+                position: absolute;
+                bottom: -50px;
+                width: 100%;
+                background-color: #fff;
+                padding-bottom: 10px;
+                visibility: hidden;
+                opacity: 0;
+                button{ 
+                    margin: 10px 0 0 0;
+                    color: #fff;
+                    border-radius: 25px;
+                    font-size: 13px;
+                    border: none;
+                    padding: 5px 70px;
+                    background-color: #233a95;
+                    border: 1px solid #233a95;
+                }
+            }
+
+            &:hover{
+
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                
+                .main{
+                    background-color: #ffffff;
+                    border-radius:10px 10px 0 0;
+                    border-top: 1px solid #c2c2d3;
+                    border-left: 1px solid #c2c2d3;
+                    border-right: 1px solid #c2c2d3;
+                }
+
+                .hover{
+                    bottom: -20px;
+                    visibility: visible;
+                    opacity: 1;
+                    border-radius:0 0 10px 10px;
+                    border-bottom: 1px solid #c2c2d3;
+                    border-left: 1px solid #c2c2d3;
+                    border-right: 1px solid #c2c2d3;
+                    background-color: #ffffff;
+                }
+
+            }
+            
+
+        }
+        
+
+        
+    }
+
+    
+
+}
+
+#weekendsalewidget{
+
+    margin: 10px 0;
+
+    .wleft{
+        position: relative;
+        padding: 15px 0;
+        img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .wigetcontenttext{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50px;
+            .wchead{
+                span{
+                    font-size: .875rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                    font-family: 'Dosis', sans-serif;
+                    color: #FF6048;
+                }
+            }
+
+            .wcmain{
+                h3{
+                    font-weight: bold;
+                    color: #3e445a;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    letter-spacing: -.8px;
+                }
+                p{
+                    color: #3E445A;
+                    font-size: .75rem;
+                }
+            }
+
+            a{
+                background-color: #233a95;
+                font-size: 12px;
+                padding: 10px 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 25px;
+                border-radius: 1px solid #233a95;
+            }
+
+
+        }
+        
+    }
+
+    .wright{
+
+        position: relative;
+        padding: 15px 0;
+        img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .wigetcontenttext{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50px;
+            .wchead{
+                span{
+                    font-size: .875rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                    font-family: 'Dosis', sans-serif;
+                    color: #FF6048;
+                }
+            }
+
+            .wcmain{
+                h3{
+                    font-weight: bold;
+                    color: #3e445a;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    letter-spacing: -.8px;
+                }
+                p{
+                    color: #3E445A;
+                    font-size: .75rem;
+                }
+            }
+
+            a{
+                background-color: #233a95;
+                font-size: 12px;
+                padding: 10px 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 25px;
+                border-radius: 1px solid #233a95;
+            }
+
+
+        }
+    }
+
+
+}
+
+#bestsellers{
+
+    margin: 20px 0;
+
+    h4{
+            font-family: 'Dosis', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #202435;
+            text-transform: uppercase;
+        }
+    p{
+            display: block;
+            font-size: .75rem;
+            color: #9b9bb4;
+            width: 100%;  
+        }
+    .productslayder{
+        margin-top: 30px;
+        border: 1px solid #edeef5;
+        border-radius: 8px;
+
+        .carts{
+            width: 100%;
+            border: 1px solid #edeef5;
+            position: relative;
+            overflow: hidden;
+            .contentimg{
+                padding: 20px;
+                img{
+                    width: 100%;
+                }
+            }
+    
+            .contenttext{
+                text-align: start;
+                padding: 0 20px 20px;
+    
+                a{
+                    text-decoration: none;
+                    color: #202435;
+                    font-size: 14px;
+                    font-weight: 500;
+                    display: block;
+                }
+    
+                .cartsstock{
+                    font-size: 11px;
+                    color: #00b853;
+                    font-family: 'Dosis', sans-serif;
+                    font-weight: bold;
+                }
+    
+                .cartselementprices{
+                    font-family: 'Dosis', sans-serif;
+                    .prices{
+                        font-size: 85%;
+                        color: #c2c2d3;
+                        font-weight: bold;
+                        font-size: 15.3px;
+                        margin-right: 10px;
+                        text-decoration:line-through;
+                    }
+                    .saleprices{
+                        color: #d51243;
+                        font-weight: bold;
+                        font-size: 18px;
+    
+                    }
+                }
+    
+    
+                .cartsrating{
+                
+                    i{    
+                        font-size: 10px;
+                        color:#ffcd00;
+                        margin: 0 1px;
+                    }
+                    span{
+                        font-size: 11px;
+                        margin: 0 4px;
+                    }
+                }   
+            } 
+    
+            .addbutton{
+                text-align: center;
+                transition: 0.5s;
+                margin: 10px 0;
+                button{ 
+                    color: #fff;
+                    font-weight: 600;
+                    border-radius: 25px;
+                    font-size: 13px;
+                    border: none;
+                    padding: 5px 80px;
+                    background-color: #ffcd00;
+                    border: 1px solid #ffcd00;
+                }
+            }
+            
+            &:hover{
+                &{
+                    .like{
+                        right: 10px;
+                        opacity: 1;
+                    }
+                    
+                    .resize{
+                        right: 10px;
+                        opacity: 1;
+                    }
+                }
+    
+            }
+    
+            .like{
+                background-color: #ffcd00;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                color: #fff;
+                padding: 10px 10px;
+                border-radius: 100%;
+                position: absolute;
+                transition: 0.6s;
+                top: 60px;
+                right: -50px;
+                opacity: 0;
+                &:hover{
+                    color: #d51243;
+                }
+            }
+    
+            .resize{
+                background-color: #ffcd00;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                color: #fff;
+                padding: 10px 11px;
+                border-radius: 100%;
+                position: absolute;
+                transition: 0.3s;
+                top: 10px;
+                right: -50px;
+                opacity: 0;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+    
+    
+        }
+
+        .slick-prev{
+            left: -25px;
+            z-index: 1;
+            &::before{
+                font-size: 50px;
+                color: #ffcd00;
+
+            }
+        }
+    
+        .slick-next{
+            z-index: 1;    
+            right: 5px;
+            &::before{
+                font-size: 50px;
+                color: #ffcd00;
+            }        
+        }
+
+    }
+
+}
+
+#productsadvertising{ 
+    margin: 10px 0;
+    .advertising{
+            background-color: #FBEACF;
+            text-align: center;
+            border-radius: 10px;
+            padding: 1.25rem .9375rem;
+        a{
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #202435;
+            
+        }
+    }
+}
+
+#products{
+    margin: 50px 0 !important;
+    .productsallbox{
+        display: flex;
+        flex-wrap: wrap;
+       
+        .carts{
+            width: 20%;
+            padding: 0 0 !important;
+            position: relative;
+            .main{
+                overflow: hidden;
+                position: relative;
+                border: 1px solid #edeef5;
+                .contentimg{
+                    padding: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .like{
+                    background-color: #fff;
+                    padding: 10px 10px;
+                    border-radius: 100%;
+                    position: absolute;
+                    color: #233a95;
+                    transition: 0.6s;
+                    top: 60px;
+                    right: -50px;
+                    opacity: 0;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #d51243;
+                        background-color: #233a95;
+                    }
+                }
+    
+                .resize{
+                    position: absolute;
+                    background-color: #fff;
+                    color: #233a95;
+                    padding: 10px 11px;
+                    border-radius: 100%;
+                    transition: 0.3s;
+                    top: 10px;
+                    right: -50px;
+                    opacity: 1;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    &:hover{
+                        transform: scale(1.2);
+                        background-color: #233a95;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .contenttext{
+                    text-align: start;
+                    padding: 0 20px 30px;
+    
+                    a{
+                        text-decoration: none;
+                        color: #202435;
+                        font-size: 14px;
+                        font-weight: 500;
+                        display: block;
+                    }
+    
+                    .cartsstock{
+                        font-size: 11px;
+                        color: #00b853;
+                        font-family: 'Dosis', sans-serif;
+                        font-weight: bold;
+                    }
+    
+                    .cartselementprices{
+                        font-family: 'Dosis', sans-serif;
+                        .prices{
+                            font-size: 85%;
+                            color: #c2c2d3;
+                            font-weight: bold;
+                            font-size: 15.3px;
+                            margin-right: 10px;
+                            text-decoration:line-through;
+                        }
+                        .saleprices{
+                            color: #d51243;
+                            font-weight: bold;
+                            font-size: 18px;
+        
+                        }
+                    }
+    
+    
+                    .cartsrating{
+                    
+                        i{    
+                            font-size: 10px;
+                            color:#ffcd00;
+                            margin: 0 1px;
+                        }
+                        span{
+                            font-size: 11px;
+                            margin: 0 4px;
+                        }
+                    } 
+                    
+
+
+                } 
+
+                
+                &:hover{
+
+                    .resize{
+                        right: 10px;
+                        opacity: 1;
+                    }
+
+                    .like{
+                        right: 10px;
+                        opacity: 1;
+                    }
+
+                }
+
+            }
+
+            .hover{
+                z-index: 1111;
+                text-align: center;
+                position: absolute;
+                bottom: -50px;
+                width: 100%;
+                background-color: #fff;
+                padding-bottom: 10px;
+                visibility: hidden;
+                opacity: 0;
+                button{ 
+                    margin: 10px 0 0 0;
+                    color: #fff;
+                    border-radius: 25px;
+                    font-size: 13px;
+                    border: none;
+                    padding: 5px 70px;
+                    background-color: #233a95;
+                    border: 1px solid #233a95;
+                }
+            }
+
+            &:hover{
+
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                
+                .main{
+                    background-color: #ffffff;
+                    border-radius:10px 10px 0 0;
+                    border-top: 1px solid #c2c2d3;
+                    border-left: 1px solid #c2c2d3;
+                    border-right: 1px solid #c2c2d3;
+                }
+
+                .hover{
+                    bottom: -20px;
+                    visibility: visible;
+                    opacity: 1;
+                    border-radius:0 0 10px 10px;
+                    border-bottom: 1px solid #c2c2d3;
+                    border-left: 1px solid #c2c2d3;
+                    border-right: 1px solid #c2c2d3;
+                    background-color: #ffffff;
+                }
+
+            }
+            
+
+        }
+
+    }
+
+}
+
+#meal{
+    margin: 10px 0;
+    .wright{
+        position: relative;
+        padding: 15px 0;
+        img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .wigetcontenttext{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50px;
+            .wchead{
+                span{
+                    font-size: .875rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                    font-family: 'Dosis', sans-serif;
+                    color: #00b853;
+                }
+            }
+
+            .wcmain{
+                h3{
+                    font-weight: bold;
+                    color: #3e445a;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    letter-spacing: .8px;
+                }
+                p{
+                    color: #9b9bb4;
+                    font-size: .75rem;
+                }
+            }
+
+            a{
+                background-color: #c2c2d3;
+                font-size: 12px;
+                padding: 10px 20px;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 25px;
+                border-radius: 1px solid #c2c2d3;
+            }
+
+
+        }
+    }
+
+}
+
+#productsblog{
+
+    margin: 10px 0 50px;
+    .mainblog{
+        .top{
+            img{
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        .bottom{
+            span{
+                font-family: "Dosis", sans-serif;
+                a{
+                    font-size: .8125rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #9b9bb4;
+                }
+
+            }
+
+            h5{
+                a{    
+                    text-decoration: none;
+                    color: #202435;
+                    font-weight: bold;
+                }
+            }
+
+            .blogtime{
+                font-family: 'Inter', sans-serif;
+                color: #71778e;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .blogcomment{
+                font-family: 'Inter', sans-serif;
+                a{
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #202435;
+                }
+            }
+
+            .blogcreaters{
+                span{
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                a{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #202435;
+                }
+            }
+
+        }
+
+    }
+}
+
+#notification{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    .nmain{
+        border-radius: 10px;
+        width: 77%;
+        height: 90px;
+        background-color: #00b853;  
+        padding: 10px;
+        span{
+            font-size: 15px;
+            color: #ffffff;
+
+        }
+        a{  
+            display: block;
+            width: 100%;
+            color: #FFFFFF;
+            margin-left: 10px;
+        }
+    }   
+}
+
+

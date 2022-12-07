@@ -1,0 +1,160 @@
+
+
+
+.emptybasket{
+    text-align: center;
+    padding: 40px;
+    margin: 100px;   
+    .text{
+        margin: 40px;
+
+    }
+    .icons{
+        margin: 40px 0;
+        i{
+            font-size: 100px;
+            color: #F04652;
+            padding: 40px 45px 40px 40px;
+            background-color: #d5d5e0;
+            border-radius: 100%;
+        }
+    }
+    .bottom{
+         margin: 40px 0 0 0;
+
+         a{
+            color: #fff;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            padding: 20px 70px;
+            background-color: #233a95;
+            border: 1px solid #233a95;
+         }   
+    }
+}
+
+
+.cartproduct{
+
+    margin: 50px 0;
+
+    .contentbasketbox{
+
+        h3{
+            font-size: 15px;
+            color: #c2c2d3;
+        } 
+
+
+    }
+
+    #list{
+
+        .basketbox{
+
+            border-top: 1px solid #c2c2d398;
+            border-bottom: 1px solid #c2c2d398;
+            align-items: center;
+
+            h3{
+                font-size: 15px;
+            }
+
+            .productimg{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .productprice{
+                opacity: 0.5;
+            }
+
+            .quality{
+                #minus,#plus{
+                    padding: 4px 8px;
+                    background-color: #EDEEF5;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    i{
+                        font-size: 14px;
+                        color: black;
+                    }
+                }
+                #count{
+                    margin: 0 8px;
+                }
+
+            }
+
+            .removesicons{
+                i{
+                    font-size: 15px;
+                    color: #F04652;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+    
+    
+        }
+
+    }
+
+    .totalpricebox{
+        margin-top: 15px;
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 40px;
+
+        .tphead{
+            border-bottom: 1px solid grey;
+        }
+
+        .tbsubtotal{
+            display: flex;
+            padding: 10px 0;
+            border-bottom: 1px solid grey;
+            .tbsub{
+                text-align: start;
+                width: 50%;
+            }
+
+            .tbsubpri{
+                text-align: end;
+                width: 50%;
+            }
+
+        }
+    }
+
+    button{
+        margin-top: 20px;
+        padding: 15px 30px;
+        border: none;
+        background-color: red;
+        color: #FFFFFF;
+        border-radius: 20px;
+
+    }
+
+}
+
+#undo{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    right: 20px;
+    bottom: 10px;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 13px;
+    border: none;
+    padding: 5px 70px;
+    background-color: #233a95;
+    border: 1px solid #233a95;
+}
+
